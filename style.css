@@ -1,0 +1,99 @@
+
+
+* {box-sizing: border-box;}
+
+body {
+  background-color: #fff;
+  min-height: 100vh;
+  margin: 0;
+  transition:  0.2s linear;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body.dark {background-color: black;}
+
+body.dark .word {color: #fff;}
+body.dark .gold {
+  color: gold;
+}
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+button{
+  position: absolute;
+  right: 100px;
+  background-color: transparent;
+  border: none;
+  margin: 10px;
+  display: block;
+}
+.checkbox-label {
+  background-color: #9B9999;
+  width: 55px;
+  height: 29px;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.checkbox-label .ball {
+  background-color: #fff;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .checkbox-label .ball {
+  transform: translateX(24px);
+}
+.support {
+	position: absolute;
+	right: 20px;
+  bottom: 20px;
+  background-color: green;
+}
+
+.support a {
+  color: #292c35;
+  font-size: 32px;
+  backface-visibility: hidden;
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.support a:hover{
+  transform: scale(1.1);
+  color: gold;
+
+}
+.another {
+    padding: 0 150px;
+    width: 78%;
+    font-family: none;
+}
+.checkbox {
+  padding: 30px;
+}
+.another {
+  font-weight: lighter;
+
+  margin: auto;
+  padding-top: 95px;
+  letter-spacing: 0.1rem;
+}
+.green {
+  background-color: green;
+}
+.yz {
+  animation: la alternate infinite 1.9s linear ;
+  text-decoration: none;
+}
